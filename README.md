@@ -1,0 +1,10 @@
+# ConfigCrusher: Towards White-Box Performance Analysis for Configurable Systems - Supplementary Material
+
+## Abstract
+Stakeholders of configurable systems are often interested in knowing how configuration options influence the performance of a system to facilitate, for example, the debugging and optimization processes of these systems. Several black-box approaches can be used to obtain this information, but they either sample a large number of configurations to make accurate predictions or miss important performance-influencing interactions when sampling few configurations. Furthermore, black-box approaches cannot pinpoint the parts of a system that are responsible for performance differences among configurations. This article proposes ConfigCrusher, a white-box performance analysis that inspects the implementation of a system to guide the performance analysis, exploiting several insights of configurable systems in the process. ConfigCrusher employs a static data-flow analysis to identify how configuration options may influence control-flow statements and instruments code regions, corresponding to these statements, to dynamically analyze the influence of configuration options on the regions' performance. Our evaluation on 10 configurable systems shows the feasibility of our white-box approach to more efficiently build performance-influence models that are similar to or more accurate than current state of the art approaches. Overall, we showcase the benefits of white-box performance analyses and their potential to outperform black-box approaches and provide additional information for analyzing configurable systems.
+
+## Source Code
+
+- [ConfigCrusher](https://github.com/miguelvelezmj25/ConfigCrusher/tree/develop)
+- [Static Taint Analysis](https://github.com/miguelvelezmj25/taintflow)
+- [Subject Systems](https://github.com/miguelvelezmj25/performance-mapper-evaluation)
